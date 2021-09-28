@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="delete2.png" />
+    <None Remove="Images\Notes.ico" />
+    <None Remove="plus2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="delete2.png" />
+    <Resource Include="Images\Notes.ico" />
+    <Resource Include="plus2.png" />
+  </ItemGroup>
+
+</Project>

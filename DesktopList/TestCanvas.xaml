@@ -1,0 +1,15 @@
+﻿<Window x:Class="DesktopList.TestCanvas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DesktopList"
+        mc:Ignorable="d"
+        Title="TestCanvas" Height="450" Width="800">
+    <Grid>
+        <Canvas>
+            <TextBox Canvas.Left="379" Canvas.Top="148" Text="TextBox" TextWrapping="Wrap" Width="120"/>
+        </Canvas>
+
+    </Grid>
+</Window>

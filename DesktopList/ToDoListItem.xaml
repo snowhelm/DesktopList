@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="DesktopList.ToDoListItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+             xmlns:local="clr-namespace:DesktopList"
+             mc:Ignorable="d" 
+             d:DesignHeight="76.86" d:DesignWidth="264.463" Loaded="UserControl_Loaded" MouseEnter="UserControl_MouseEnter">
+    <Grid MouseEnter="UserControl_MouseEnter">
+        <Border BorderThickness="1" Background="#CC2D2D32" CornerRadius="5,5,5,5" Margin="3,3,3,0" MouseEnter="UserControl_MouseEnter">
+            <DockPanel x:Name="dpMain" LastChildFill="True" Margin="5,5,5,0" MouseEnter="UserControl_MouseEnter">
+                <Canvas Width="100" Height="18" DockPanel.Dock="Bottom" HorizontalAlignment="Right" MouseEnter="UserControl_MouseEnter" >
+                    <Image x:Name="imgDelete" Height="16" Width="16" Canvas.Right="0" Canvas.Top="0" Source="/delete2.png" Cursor="Hand" MouseLeftButtonDown="imgDelete_MouseLeftButtonDown"/>
+                </Canvas>
+                <TextBox x:Name="txtMainText" Text="TextBox" TextWrapping="Wrap" Width="100" DockPanel.Dock="Top" Background="{x:Null}" Foreground="White" Margin="5,5,5,0" BorderBrush="{x:Null}" BorderThickness="0,0,0,0" AcceptsReturn="True" TextChanged="txtMainText_TextChanged" MouseEnter="UserControl_MouseEnter" CaretBrush="White"/>
+                <!--<WindowsFormsHost>
+                <wf:RichTextBox BackColor="#FFFFFFFF" x:Name="rtbMainText" Dock="Fill" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non mauris id ipsum auctor vehicula sed ut felis. Donec porttitor nisi eget ex porttitor, sed posuere sapien pretium."/>
+            </WindowsFormsHost>-->
+            </DockPanel>
+        </Border>
+    </Grid>
+</UserControl>
